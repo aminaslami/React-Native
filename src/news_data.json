@@ -1,0 +1,30 @@
+[
+  {
+    "u_id": 1,
+    "author": "Johns Hopkins",
+    "title": "A Different COVID-19 Graph",
+    "description": "The most widely used graphical representations comparing different countries COVID-19 paths cloak the fact that some countries had more lead time to identify the best response and take preventative action. The graphs start at a point in time for each country when the virus started to spread, at the 100th confirmed case for example, and compare countries paths from that point.",
+    "imageUrl": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*IbW1RMaUZZ_X0oHCC1TKPg.png"
+  },
+  {
+    "u_id": 2,
+    "author": "Vajid Khan",
+    "title": "The Future of Software Development: Trends to Watch in 2024",
+    "description": "In the fast-paced realm of technology, the landscape of software development is ever-evolving. As we step into 2024, the future of software development promises to be more dynamic and transformative than ever before. In this blog, we will explore the trends that are set to shape the software development industry in the coming year.",
+    "imageUrl": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*c5MhHPvqFyK9YoMODB3l4A.jpeg"
+  },
+  {
+    "u_id": 3,
+    "author": "Daniel Sparks",
+    "title": "Why Tesla Stock Fell Sharply Friday Morning - Motley Fool",
+    "description": "Shares are down despite Tesla reporting record third-quarter deliveries. Shares of electric-car maker Tesla(NASDAQ:TSLA) fell Friday morning, declining 5% a few minutes into market open.",
+    "imageUrl": "https://g.foolcdn.com/editorial/images/593799/stock-down.jpg"
+  },
+  {
+    "u_id": 4,
+    "author": "Jessica Bursztynsky",
+    "title": "Twilio hits new 52-week high as stock",
+    "description": "Shares of Twilio extended its gains into Friday, reaching a 52-week high, after the company said in a filing that it expects better-than-expected third-quarter revenue.",
+    "imageUrl": "https://images.mktw.net/im-242755/social.jpg"
+  }
+]
