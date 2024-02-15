@@ -1,27 +1,60 @@
 import React from 'react';
-import {StyleSheet, SafeAreaView} from 'react-native';
-import Card from './componenets/Card';
+import { 
+  SafeAreaView, 
+  Text, 
+  Image, 
+  FlatList, 
+  StyleSheet, 
+  ScrollView, 
+  Dimensions 
+} from 'react-native';
+import NewsCard from './componenets/NewsCard';
+
+import news_data from './news_data.json';
+import news_banner_data from './news_banner_data.json';
 
 function App() {
+
+  const renderNews = ({item}) => <NewsCard news={item} />;
+
   return (
     <SafeAreaView style={styles.container}>
-      <Card title="Eddard Stark" text="Winter is coming..." />
-      <Card
-        title="Serbest"
-        text="Ilhami abi sen soyle, ben baska bir ilde miyim?"
-      />
-      <Card
-        title="Arif Isik"
-        text="Uzaylilar tarafindan kacirildim. Evet tarafindan"
-      />
+        <Text style={styles.headerText}>News - خبرها</Text>
+       
+        <FlatList
+        ListHeaderComponent={() => (
+          <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+            {news_banner_data.map(bannerNews => (
+              <Image 
+                style={styles.banner_image}
+                source={{uri: bannerNews.imageUrl}} />
+            ))}
+          </ScrollView>
+          )}
+          keyExtractor={item => item.u_id.toString()}
+          data={news_data}
+          renderItem={renderNews}
+        />
+
     </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#e0e0e0',
+    backgroundColor: '#eceff1',
+  },
+
+  banner_image: {
+    height: Dimensions.get('window').height / 5,
+    width: Dimensions.get('window').width / 2,
+  },
+  
+  headerText: {
+    fontWeight: 'bold',
+    fontSize: 50,
+    textAlign: 'center',
   },
 });
 
