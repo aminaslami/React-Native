@@ -4,6 +4,7 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 ### My Youtube: https://www.youtube.com/@AminAslami/videos
 ### My Linkedin: https://www.linkedin.com/in/amin-aslami/
 ### My Medium: https://medium.com/@aminaslami
+### Eğitmen:  Ezran Bayantemur
 
 # Getting Started
 
